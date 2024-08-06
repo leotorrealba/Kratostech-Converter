@@ -9,11 +9,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header locale={locale} setLocale={setLocale} />
-      <main className="flex-grow">
-        <Component {...pageProps} locale={locale} setLocale={setLocale} />
-      </main>
-      <Footer locale={locale} />
+      <Header locale={locale || 'es'} />
+      <Component {...pageProps} />
+      <Footer locale={locale || 'es'} />
     </div>
   )
 }
