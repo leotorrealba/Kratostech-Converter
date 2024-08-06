@@ -195,7 +195,7 @@ export default function Home({ locale, setLocale }: HomeProps) {
     <div className="flex flex-col min-h-screen bg-gray-light">
       <Head>
         <title>Convertidor de Archivos</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main className="flex-grow container mx-auto px-4 py-8">
